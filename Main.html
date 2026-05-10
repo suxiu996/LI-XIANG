@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ポートフォリオ | Your Name</title>
+  <meta name="description" content="ゲームプログラマー志望のポートフォリオサイトです。Unity、C#、Unreal Engine、OpenGL、流体シミュレーションなどの制作実績を掲載しています。">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="nav-inner">
+    <div class="logo">Your<span>Portfolio</span></div>
+    <nav class="nav-links">
+      <a href="#profile">Profile</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#research">Research</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="slide-up">
+        <div class="badge">Game Programmer / Graphics / Engine</div>
+
+        <h1>
+          ゲームの表現と仕組みを<br>
+          <span class="gradient-text">実装で形にする</span>
+        </h1>
+
+        <p>
+          C#、Unity、Unreal Engine、OpenGLを中心に、ゲームプログラム、リアルタイム表現、
+          流体シミュレーション、IK制御、ツール制作に取り組んでいます。
+          仕様理解から実装、統合、デバッグ、改善まで粘り強く進めることを強みとしています。
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">制作物を見る</a>
+          <a class="btn btn-secondary" href="#contact">連絡先を見る</a>
+        </div>
+      </div>
+
+      <aside class="profile-card float-card">
+        <div class="avatar"></div>
+        <h2>Your Name</h2>
+        <p>ゲームプログラマー志望 / グラフィックス・エンジン領域に関心</p>
+
+        <div class="profile-stats">
+          <div class="stat">
+            <strong>C#</strong>
+            <span>Main</span>
+          </div>
+          <div class="stat">
+            <strong>Unity</strong>
+            <span>Game</span>
+          </div>
+          <div class="stat">
+            <strong>OpenGL</strong>
+            <span>Graphics</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Profile -->
+  <section id="profile">
+    <div class="container">
+      <h2 class="section-title">Profile</h2>
+      <p class="section-subtitle">
+        自己紹介。ここに学校名、専攻、志望職種、関心分野を簡潔に書きます。
+        採用担当者は忙しいので、詩的すぎる自己陶酔文はここでは封印です。
+      </p>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>基本情報</h3>
+          <ul class="clean-list">
+            <li>氏名：Your Name</li>
+            <li>学校：〇〇大学 / 〇〇専門学校</li>
+            <li>専攻：デジタルメディア / 情報 / ゲーム制作</li>
+            <li>志望職種：ゲームプログラマー / グラフィックスプログラマー</li>
+            <li>使用言語：C#、C++、JavaScript など</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>自己PR</h3>
+          <p>
+            私の強みは、問題を再現し、原因を分離し、改善まで粘り強く進められる点です。
+            制作では、機能を作るだけでなく、ログ確認、挙動検証、処理負荷の確認を行い、
+            安定して動作する品質を意識して実装しています。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-subtitle">
+        制作物一覧。画像、動画リンク、GitHubリンク、担当箇所を書くと一気に就活用になります。
+      </p>
+
+      <div class="grid grid-3">
+
+        <article class="card project-card">
+          <div class="project-image"></div>
+          <div class="project-content">
+            <h3>粒子法による流体表現</h3>
+            <p>
+              MPS / SPHを参考に、粒子ベースの流体表現を実装。
+              近傍探索、自由表面判定、法線推定、衝突処理などを扱いました。
+            </p>
+
+            <div class="tags">
+              <span class="tag">C#</span>
+              <span class="tag">Simulation</span>
+              <span class="tag">MPS / SPH</span>
+            </div>
+
+            <a class="link" href="#" target="_blank">詳細を見る</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <div class="project-image"></div>
+          <div class="project-content">
+            <h3>Unityゲーム制作</h3>
+            <p>
+              チーム制作にて、サウンド以外の実装、統合、テストを担当。
+              プレイヤー制御、UI、ゲーム進行、デバッグ対応を行いました。
+            </p>
+
+            <div class="tags">
+              <span class="tag">Unity</span>
+              <span class="tag">C#</span>
+              <span class="tag">Team Project</span>
+            </div>
+
+            <a class="link" href="#" target="_blank">詳細を見る</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <div class="project-image"></div>
+          <div class="project-content">
+            <h3>OpenGL グラフィックス実験</h3>
+            <p>
+              OpenGLを用いて、ワイヤーフレーム生成、水面表現、シェーダー表現などを実装。
+              リアルタイム描画の基礎理解を深めました。
+            </p>
+
+            <div class="tags">
+              <span class="tag">OpenGL</span>
+              <span class="tag">Graphics</span>
+              <span class="tag">Shader</span>
+            </div>
+
+            <a class="link" href="#" target="_blank">詳細を見る</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <p class="section-subtitle">
+        使用経験のある技術。数値は盛りすぎると面接で処刑されるので、現実的に。
+      </p>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Programming</h3>
+
+          <div class="skill-list">
+            <div class="skill">
+              <div class="skill-top">
+                <span>C#</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill w-90"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-top">
+                <span>C++</span>
+                <span>65%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill w-60"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-top">
+                <span>JavaScript / HTML / CSS</span>
+                <span>70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill w-70"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Tools / Engines</h3>
+
+          <div class="skill-list">
+            <div class="skill">
+              <div class="skill-top">
+                <span>Unity</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill w-85"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-top">
+                <span>Unreal Engine 5</span>
+                <span>70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill w-70"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-top">
+                <span>3ds Max / Maya / ZBrush</span>
+                <span>65%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill w-60"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Research -->
+  <section id="research">
+    <div class="container">
+      <h2 class="section-title">Research / Study</h2>
+      <p class="section-subtitle">
+        卒業研究・創成課題・得意分野を書く場所。ゲーム会社向けなら、技術的に何を考えて実装したかを見せるのが大事です。
+      </p>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">Research Theme</div>
+          <h3>粒子法を用いた流体の濡れ性表現</h3>
+          <p>
+            MPS / SPHによる流体表現を対象に、接触角モデル、表面張力項、自由表面判定、
+            法線推定、衝突処理について調査・実装しました。
+            破綻するケースをログで再現し、原因を分離しながら修正を重ねました。
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">Technical Interest</div>
+          <h3>リアルタイム表現とゲームエンジン</h3>
+          <p>
+            水面表現、IK制御、ワイヤーフレーム生成、簡易パーサ、式評価器など、
+            ゲーム内で使える表現や開発支援機能に関心があります。
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">Team Development</div>
+          <h3>チーム制作での実装・統合・テスト</h3>
+          <p>
+            チーム制作では、担当機能の実装だけでなく、他メンバーの作業との統合、
+            不具合修正、提出期限に向けた調整にも取り組みました。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Strength -->
+  <section id="strength">
+    <div class="container">
+      <h2 class="section-title">Strength</h2>
+
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="card-icon">A</div>
+          <h3>原因分離力</h3>
+          <p>
+            不具合が発生した際、ログや再現条件を確認し、原因を段階的に切り分けます。
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">B</div>
+          <h3>実装継続力</h3>
+          <p>
+            仕様理解、実装、検証、修正までを繰り返し、完成度を高めることを意識しています。
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">C</div>
+          <h3>表現への関心</h3>
+          <p>
+            ゲームの没入感を高めるための映像表現、物理表現、操作感に強い関心があります。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-subtitle">
+        連絡先・GitHub・作品動画リンクなど。ここが空だと、採用担当者が念力で連絡する羽目になります。
+      </p>
+
+      <div class="card">
+        <table>
+          <tr>
+            <th>Mail</th>
+            <td>your-email@example.com</td>
+          </tr>
+          <tr>
+            <th>GitHub</th>
+            <td><a class="link" href="#" target="_blank">https://github.com/your-name</a></td>
+          </tr>
+          <tr>
+            <th>Portfolio</th>
+            <td><a class="link" href="#" target="_blank">https://your-name.github.io/</a></td>
+          </tr>
+          <tr>
+            <th>希望職種</th>
+            <td>ゲームプログラマー / グラフィックスプログラマー / エンジンプログラマー</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    © 2026 Your Name. Portfolio Site.
+  </div>
+</footer>
+
+</body>
+</html>
