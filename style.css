@@ -285,9 +285,7 @@ a.link:hover {
   height: 132px;
   border-radius: 50%;
   margin-bottom: 22px;
-  background:
-    linear-gradient(135deg, rgba(96, 165, 250, 0.25), rgba(167, 139, 250, 0.25)),
-    url("images/avatar.png");
+  background-image: url("images/avatar.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
